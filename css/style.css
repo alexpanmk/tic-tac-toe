@@ -1,0 +1,37 @@
+html {
+    background-color: #343434;
+}
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container styling  */
+.main {
+    display: flex;
+    border: 20px;
+}
+
+
+/* Fixed-size grid for the Tic Tac Toe grid */
+.game-grid {
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    /* margin: 20px; */
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-row: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+    height: 320px;
+    width: 320px;
+}
+
+.cell {
+    display: grid;
+    background-color: rgb(255, 140, 0);
+}
